@@ -1,0 +1,11 @@
+version: '2'
+services:
+    app:
+        build: .
+        container_name: al_test
+        stdin_open: true
+        tty: true
+        ports:
+            - "2022:22"
+        volumes:
+            - .:/work
